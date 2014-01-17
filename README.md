@@ -5,8 +5,9 @@ hzh-emacs
 I use the "prelude" settings, thanks a lot to him.
 
 # Installation
-First Download prelude. Then Download this directory, and
-put it in your home directory, rename it to ".emacs-hzh.d".
+First please Download prelude at:
+https://github.com/bbatsov/prelude
+Then Download my repo, and put it in your home directory, rename it to ".emacs-hzh.d".
 Make a soft link of file "prelude-modules.el" to ".emacs.d/prelude-modules.el".
 
 # About
