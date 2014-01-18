@@ -89,7 +89,7 @@
 
 ;;; hzh add for set mark
 (global-set-key [?\S- ] 'set-mark-command)
-(global-set-key (kbd "C-m") 'set-mark-command)
+(global-set-key [f7] 'set-mark-command)
 ; (global-set-key (kbd "M-n") 'set-mark-command)
 ; (custom-set-variables '(default-input-method "chinese-py"))
 
