@@ -97,8 +97,21 @@
 (toggle-scroll-bar -1)
 
 ;;; hzh add for line number
+(require 'hlinum)
+(hlinum-activate)
 (global-linum-mode t)
-(display-time-mode t)
+(setq linum-format " %d ")
+; (display-time-mode t)
 
 ;;; hzh add for goto-line
 (global-set-key [f8] 'goto-line)
+
+;;; no backup
+; (setq make-backup-files nil)
+;;; ========== Place Backup Files in Specific Directory ==========
+;;; Enable backup files.
+(setq make-backup-files t)
+;;; Enable versioning with default values (keep five last versions, I think!)
+(setq version-control t)
+;;; Save all backup file in this directory.
+(setq backup-directory-alist (quote ((".*" . "~/.emacs_backups/"))))
