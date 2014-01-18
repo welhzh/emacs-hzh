@@ -60,12 +60,12 @@
 (add-to-list 'custom-theme-load-path hzh-theme-loadpath)
 (hzh-add-subfolders-to-custom-theme-load-path hzh-theme-loadpath)
 
-;; hzh add for theme
+;;; hzh add for theme
 (disable-theme 'zenburn)
-;; (load-theme 'solarized-dark t t)
-;; (enable-theme 'solarized-dark)
-;; (load-theme 'monokai t t)
-;;; (setq molokai-theme-kit t)
+; (load-theme 'solarized-dark t t)
+; (enable-theme 'solarized-dark)
+; (load-theme 'monokai t t)
+; (setq molokai-theme-kit t)
 (load-theme 'molokai t t)
 (enable-theme 'molokai)
 
@@ -73,24 +73,24 @@
 ;;; ibus-el 似乎使用的是python2
 (require 'ibus)
 (setq ibus-python-shell-command-name "python2.7")
-;; Turn on ibus-mode automatically after loading .emacs
+;;; Turn on ibus-mode automatically after loading .emacs
 (add-hook 'after-init-hook 'ibus-mode-on)
 
 ;;; hzh add for ibus settings
-;; Use C-SPC for Set Mark command
-;; (ibus-define-common-key ?\C-\s nil)
-;; Use C-/ for Undo command, hzh: ibus will not change Undo
+;;; Use C-SPC for Set Mark command
+; (ibus-define-common-key ?\C-\s nil)
+;;; Use C-/ for Undo command, hzh: ibus will not change Undo
 (ibus-define-common-key ?\C-/ nil)
 (ibus-define-common-key [?\S- ] nil)
-;; Change cursor color depending on IBus status
+;;; Change cursor color depending on IBus status
 (setq ibus-cursor-color '("red" "blue" "limegreen"))
 (global-unset-key (kbd "C-SPC"))
 (global-set-key (kbd "C-SPC") 'ibus-toggle)
 
 ;;; hzh add for set mark
 (global-set-key [?\S- ] 'set-mark-command)
-(global-set-key (kbd "M-n") 'set-mark-command)
-;(custom-set-variables '(default-input-method "chinese-py"))
+; (global-set-key (kbd "M-n") 'set-mark-command)
+; (custom-set-variables '(default-input-method "chinese-py"))
 
 ;;; hzh add for scroll bar
 (toggle-scroll-bar -1)
