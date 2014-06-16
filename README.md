@@ -2,12 +2,12 @@ hzh-emacs
 =========
 
 # Manual
-I use the `prelude` settings, thanks a lot to him.
+I use the `prelude` settings, thanks a lot to its author.
 
 # Installation
 First please Download prelude at:
 `https://github.com/bbatsov/prelude`, and make a soft link of .emacs.d to directory prelude.
-Then Download my repo, and put it in your home directory, rename it to `.emacs-hzh.d`.
+<br> Then Download my repo, and put it in your home directory, rename it to `.emacs-hzh.d`.
 Make a soft link of file `prelude-modules.el` in .emacs.d to `.emacs-hzh.d/prelude-modules.el`.
 
 1、也即，在github下载prelude，然后把它放在主目录下，名字为.emacs.d-prelude <br>
